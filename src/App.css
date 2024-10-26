@@ -3,3 +3,13 @@
 body {
   font-family: "Roboto", serif !important;
 }
+
+.landing-background {
+  background: url("./src/assets/images/landing-background.svg") no-repeat;
+  background-size: cover;
+  transform: translateY(-80px);
+}
+
+.text-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adjust values as needed */
+}
