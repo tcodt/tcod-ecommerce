@@ -36,11 +36,7 @@ export default function NavItems() {
         }`}
       >
         {/* Header top start */}
-        <div
-          className={`${
-            socialToggle ? "md:block" : "hidden"
-          } pb-4 border-b border-slate-300 border-opacity-50`}
-        >
+        <div className={`${socialToggle ? "md:block" : "hidden"} pb-4`}>
           <div className="container mx-auto px-4 sm:p-0">
             <div className="flex items-center justify-between">
               <Link
@@ -50,7 +46,7 @@ export default function NavItems() {
                 <span>Create Account</span>
               </Link>
               <Link to="/login">
-                <span>Login</span>
+                <span className="text-gray-600 font-semibold">Login</span>
               </Link>
             </div>
           </div>

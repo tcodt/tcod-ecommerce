@@ -3,6 +3,7 @@ import productData from "../products.json";
 import { Link } from "react-router-dom";
 import { CiSearch } from "react-icons/ci";
 import SelectedCategory from "../components/SelectedCategory";
+import { FaStar, FaStarHalfAlt } from "react-icons/fa";
 
 const title = (
   <h1>
@@ -46,13 +47,13 @@ export default function Banner() {
   };
 
   return (
-    <div className="landing-background h-screen flex items-center justify-center">
-      <div className="w-[600px] flex flex-col gap-4 z-10">
+    <div className="landing-background h-screen flex items-center justify-center relative overflow-hidden before:content-[''] before:absolute before:-bottom-4 before:left-2 before:w-full before:h-24 before:bg-white before:bg-opacity-100 before:blur-md">
+      <div className="w-[600px] flex flex-col gap-4 z-10 mt-8">
         <div className="text-4xl text-gray-600 font-semibold text-center">
           {title}
         </div>
 
-        <form className="flex items-center gap-8">
+        <form className="flex items-center md:gap-8 gap-2 px-4 md:p-0">
           <SelectedCategory select={"all"} />
           <label className="relative flex-1">
             <input
@@ -83,8 +84,30 @@ export default function Banner() {
         >
           {searchInput &&
             filterProducts.map((product, i) => (
-              <li key={i} className="p-1 bg-slate-200 rounded shadow-sm">
-                <Link to={`/shop/${product.id}`}>{product.name}</Link>
+              <li key={i} className="p-1 bg-slate-200 rounded shadow-sm w-full">
+                <Link
+                  to={`/shop/${product.id}`}
+                  className="flex gap-4 rounded relative"
+                >
+                  <img
+                    src={product.img}
+                    alt={product.name}
+                    className="h-20 object-cover rounded"
+                  />
+                  <div className="w-full p-2">
+                    <span className="text-gray-600 font-normal">
+                      {product.name}
+                    </span>
+                  </div>
+                  <span className="flex items-center gap-1 text-gray-500 font-semibold absolute bottom-2 right-2">
+                    {product.ratings}
+                    {product.ratings >= 5 ? (
+                      <FaStar size={15} className="text-amber-500" />
+                    ) : (
+                      <FaStarHalfAlt size={15} className="text-amber-500" />
+                    )}
+                  </span>
+                </Link>
               </li>
             ))}
         </ul>
