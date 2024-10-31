@@ -1,11 +1,13 @@
 import Banner from "./Banner";
+import CategoryShowCase from "./CategoryShowCase";
 import HomeCategory from "./HomeCategory";
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Banner />
       <HomeCategory />
+      <CategoryShowCase />
 
       <br />
       <br />
@@ -14,6 +16,6 @@ export default function Home() {
       <br />
       <br />
       <br />
-    </div>
+    </>
   );
 }
