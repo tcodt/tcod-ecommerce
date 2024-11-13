@@ -50,7 +50,7 @@ export default function HomeCategory() {
       <div>
         {/* Category Text */}
         <div className="flex items-center flex-col gap-4 p-4 mb-8">
-          <span className="text-2xl text-orange-300 font-normal">
+          <span className="text-2xl text-yellow-300 font-normal">
             {subTitle}
           </span>
           <h2 className="text-4xl text-gray-700 font-semibold">{title}</h2>
@@ -70,10 +70,10 @@ export default function HomeCategory() {
                   />
                   {/* Category Content */}
                   <div className="absolute bottom-3 left-3 flex items-center gap-2">
-                    <span className="p-2 rounded-full text-white bg-orange-500 group-hover:bg-white group-hover:text-orange-500">
+                    <span className="p-2 rounded-full text-white bg-yellow-500 group-hover:bg-white group-hover:text-yellow-500">
                       {category.iconName}
                     </span>
-                    <span className="text-lg text-white font-normal group-hover:text-orange-500">
+                    <span className="text-lg text-white font-normal group-hover:text-yellow-500">
                       {category.title}
                     </span>
                   </div>
@@ -86,7 +86,7 @@ export default function HomeCategory() {
           <div className="col-span-full mt-4 flex items-center justify-center">
             <Link
               to="/shop"
-              className="bg-white border border-orange-500 py-2 px-4 rounded text-orange-500 hover:bg-orange-100 text-lg hover:-translate-y-2 transition"
+              className="bg-white border border-yellow-500 py-2 px-4 rounded text-yellow-500 hover:bg-yellow-100 text-lg hover:-translate-y-2 transition"
             >
               {btnText}
             </Link>

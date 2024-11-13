@@ -27,7 +27,7 @@ export default function NavItems() {
   });
 
   return (
-    <header className="z-50 relative">
+    <header className="z-[999] relative">
       <div
         className={`p-4 ${
           headerFixed
@@ -41,7 +41,7 @@ export default function NavItems() {
             <div className="flex items-center justify-between">
               <Link
                 to="/signup"
-                className="py-2 px-4 rounded-md bg-orange-500 text-white hover:-translate-y-2 transition"
+                className="py-2 px-4 rounded-md bg-yellow-500 text-white hover:-translate-y-2 transition"
               >
                 <span>Create Account</span>
               </Link>
@@ -61,10 +61,10 @@ export default function NavItems() {
             {/* Logo */}
             <div>
               <Link to="/">
-                <span className="text-sky-500 text-3xl font-bold text-shadow">
+                <span className="text-purple-500 text-3xl font-bold text-shadow">
                   TCOD
                 </span>
-                <span className="text-orange-500 text-3xl font-bold text-shadow">
+                <span className="text-yellow-500 text-3xl font-bold text-shadow">
                   SHOP🛒
                 </span>
               </Link>
@@ -74,14 +74,14 @@ export default function NavItems() {
               <ul
                 className={`lg:block ${
                   menuToggle
-                    ? "fixed top-0 left-0 w-[200px] h-full z-50 pt-4 ps-2 bg-slate-200 flex items-start flex-col gap-4"
+                    ? "absolute top-[55px] right-0 p-4 w-[200px] bg-slate-200 flex flex-col gap-4 shadow-md rounded"
                     : "hidden"
                 }`}
               >
                 <li className="inline-block lg:mx-6 mx-2">
                   <Link
                     to="/"
-                    className="text-gray-800 text-base font-semibold"
+                    className="text-gray-800 text-base font-semibold hover:text-purple-500 transition block"
                   >
                     Home
                   </Link>
@@ -89,7 +89,7 @@ export default function NavItems() {
                 <li className="inline-block lg:mx-6 mx-2">
                   <Link
                     to="/shop"
-                    className="text-gray-800 text-base font-semibold"
+                    className="text-gray-800 text-base font-semibold hover:text-purple-500 transition block"
                   >
                     Shop
                   </Link>
@@ -97,7 +97,7 @@ export default function NavItems() {
                 <li className="inline-block lg:mx-6 mx-2">
                   <Link
                     to="/blog"
-                    className="text-gray-800 text-base font-semibold"
+                    className="text-gray-800 text-base font-semibold hover:text-purple-500 transition block"
                   >
                     Blog
                   </Link>
@@ -105,7 +105,7 @@ export default function NavItems() {
                 <li className="inline-block lg:mx-6 mx-2">
                   <Link
                     to="/about"
-                    className="text-gray-800 text-base font-semibold"
+                    className="text-gray-800 text-base font-semibold hover:text-purple-500 transition block"
                   >
                     About
                   </Link>
@@ -113,7 +113,7 @@ export default function NavItems() {
                 <li className="inline-block lg:mx-6 mx-2">
                   <Link
                     to="/contact"
-                    className="text-gray-800 text-base font-semibold"
+                    className="text-gray-800 text-base font-semibold hover:text-purple-500 transition block"
                   >
                     Contact
                   </Link>
@@ -123,7 +123,7 @@ export default function NavItems() {
               <div className="flex items-center gap-4">
                 <Link
                   to="/sign-in"
-                  className="md:block hidden bg-orange-500 text-white py-2 px-4 rounded-md hover:-translate-y-2 transition"
+                  className="md:block hidden bg-yellow-500 text-white py-2 px-4 rounded-md hover:-translate-y-2 transition"
                 >
                   Create Account
                 </Link>
@@ -140,7 +140,7 @@ export default function NavItems() {
                 className="cursor-pointer md:hidden flex flex-col items-center justify-center w-10 h-10"
               >
                 <span
-                  className={`block w-8 h-1 bg-sky-500 mb-2 transition-all duration-300 ${
+                  className={`block w-8 h-1 bg-purple-500 mb-2 transition-all duration-300 ${
                     menuToggle
                       ? "transform -rotate-45 translate-y-[9px] translate-x-[0px] origin-right"
                       : ""
@@ -152,7 +152,7 @@ export default function NavItems() {
                   }`}
                 ></span>
                 <span
-                  className={`block w-8 h-1 bg-orange-500 mb-2 transition-all duration-300 ${
+                  className={`block w-8 h-1 bg-yellow-500 mb-2 transition-all duration-300 ${
                     menuToggle
                       ? "transform rotate-45 translate-y-2 origin-right"
                       : ""
@@ -164,7 +164,7 @@ export default function NavItems() {
                 onClick={() => setSocialToggle(!socialToggle)}
                 className="md:hidden cursor-pointer"
               >
-                <BsInfoCircleFill className="text-sky-500" size={30} />
+                <BsInfoCircleFill className="text-purple-500" size={30} />
               </div>
             </div>
           </div>

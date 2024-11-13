@@ -1,6 +1,7 @@
 import Banner from "./Banner";
 import CategoryShowCase from "./CategoryShowCase";
 import HomeCategory from "./HomeCategory";
+import Register from "./Register";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Banner />
       <HomeCategory />
       <CategoryShowCase />
+      <Register />
 
       <br />
       <br />

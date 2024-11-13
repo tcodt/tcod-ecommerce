@@ -32,3 +32,9 @@ body {
   background: url("/src/assets/images/shape-img/01.jpg") no-repeat;
   z-index: -20;
 }
+
+/* Custom Background Image */
+.custom-bg-img {
+  background: url("src/assets/images/bg-img/07.jpg") no-repeat;
+  height: 530px;
+}

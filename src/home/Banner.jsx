@@ -7,7 +7,7 @@ import { FaStar, FaStarHalfAlt } from "react-icons/fa";
 
 const title = (
   <h1>
-    Search Your One From <span className="text-orange-500">Thousand</span> Of
+    Search Your One From <span className="text-yellow-500">Thousand</span> Of
     Products
   </h1>
 );
@@ -63,7 +63,7 @@ export default function Banner() {
               placeholder="Search your product"
               value={searchInput}
               onChange={handleSearch}
-              className="w-full shadow-lg rounded-full bg-transparent text-lg p-4 border border-slate-100 focus-visible:outline-sky-500 text-gray-700"
+              className="w-full shadow-lg rounded-full bg-transparent text-lg p-4 border border-slate-100 focus-visible:outline-purple-500 text-gray-700"
             />
             <button type="submit" className="absolute top-4 right-4">
               <CiSearch className="text-gray-500" size={30} />

@@ -110,31 +110,31 @@ export default function CategoryShowCase() {
               <ul className="flex items-center gap-6 *:text-base *:text-gray-700 *:font-medium *:cursor-pointer">
                 <li
                   onClick={() => setItems(ProductData)}
-                  className="py-1 px-3 bg-white transition hover:text-white rounded hover:bg-orange-500"
+                  className="py-1 px-3 bg-white transition hover:text-white rounded hover:bg-yellow-500"
                 >
                   All
                 </li>
                 <li
                   onClick={() => filterItem("Shoes")}
-                  className="py-1 px-3 bg-white transition hover:text-white rounded hover:bg-orange-500"
+                  className="py-1 px-3 bg-white transition hover:text-white rounded hover:bg-yellow-500"
                 >
                   Shoes
                 </li>
                 <li
                   onClick={() => filterItem("Bags")}
-                  className="py-1 px-3 bg-white transition hover:text-white rounded hover:bg-orange-500"
+                  className="py-1 px-3 bg-white transition hover:text-white rounded hover:bg-yellow-500"
                 >
                   Bags
                 </li>
                 <li
                   onClick={() => filterItem("Phones")}
-                  className="py-1 px-3 bg-white transition hover:text-white rounded hover:bg-orange-500"
+                  className="py-1 px-3 bg-white transition hover:text-white rounded hover:bg-yellow-500"
                 >
                   Phones
                 </li>
                 <li
                   onClick={() => filterItem("Beauty")}
-                  className="py-1 px-3 bg-white transition hover:text-white rounded hover:bg-orange-500"
+                  className="py-1 px-3 bg-white transition hover:text-white rounded hover:bg-yellow-500"
                 >
                   Beauty
                 </li>
@@ -158,7 +158,7 @@ export default function CategoryShowCase() {
                       className="rounded w-full"
                     />
                   </Link>
-                  <div className="absolute bottom-0 left-0 bg-orange-500 bg-opacity-50 p-1 w-full">
+                  <div className="absolute bottom-0 left-0 bg-yellow-500 bg-opacity-50 p-1 w-full">
                     <span className="text-base text-gray-800 font-medium">
                       {item.cate}
                     </span>
@@ -181,7 +181,7 @@ export default function CategoryShowCase() {
                     >
                       {item.brand}
                     </Link>
-                    <span className="text-base text-orange-500 font-normal">
+                    <span className="text-base text-yellow-500 font-normal">
                       {item.price}
                     </span>
                   </div>
