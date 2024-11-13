@@ -1,6 +1,7 @@
 import Banner from "./Banner";
 import CategoryShowCase from "./CategoryShowCase";
 import HomeCategory from "./HomeCategory";
+import LocationSprade from "./LocationSprade";
 import Register from "./Register";
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
       <HomeCategory />
       <CategoryShowCase />
       <Register />
+      <LocationSprade />
 
       <br />
       <br />
